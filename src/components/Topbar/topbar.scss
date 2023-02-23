@@ -1,3 +1,5 @@
+@use "../../assets/scss/placeholder.scss";
+
 .topbar {
     width           : 100%;
     height          : 50px;
@@ -20,7 +22,7 @@
 
 .topbarIconContainer {
     position: relative;
-    cursor  : pointer;
+    @extend %pointer;
 
     .topIconBadge {
         position        : absolute;
