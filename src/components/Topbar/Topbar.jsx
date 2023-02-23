@@ -1,4 +1,4 @@
-import { NotificationsNone } from "@mui/icons-material";
+import { Language, NotificationsNone, Settings } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
 import "./topbar.scss";
@@ -12,6 +12,13 @@ const Topbar = () => {
         <div className="topbarRight">
           <div className="topbarIconContainer">
             <NotificationsNone />
+            <span className="topIconBadge">3</span>
+          </div>
+          <div className="topbarIconContainer">
+            <Language />
+          </div>
+          <div className="topbarIconContainer">
+            <Settings />
             <span className="topIconBadge">3</span>
           </div>
         </div>

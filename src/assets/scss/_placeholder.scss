@@ -1,3 +1,44 @@
 %pointer {
     cursor: pointer;
 }
+
+%flex {
+    display: flex;
+}
+
+%flexRowXCenter {
+    @extend %flex;
+    justify-content: center;
+}
+
+%flexRowYCenter {
+    @extend %flex;
+    align-items: center;
+}
+
+%flexCol {
+    @extend %flex;
+    flex-direction: column;
+}
+
+%flexColXCenter {
+    @extend %flexCol;
+    align-items: center;
+}
+
+%flexColYCenter {
+    @extend %flexCol;
+    justify-content: center;
+}
+
+%flexRowCenter {
+    @extend %flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+%flexColCenter {
+    @extend %flexCol;
+    justify-content: center;
+    align-items    : center;
+}
