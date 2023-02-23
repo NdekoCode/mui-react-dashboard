@@ -1,6 +1,7 @@
 import { Language, NotificationsNone, Settings } from "@mui/icons-material";
 import React from "react";
 import { Link } from "react-router-dom";
+import avatar from "../../assets/images/avatar.jpg";
 import "./topbar.scss";
 const Topbar = () => {
   return (
@@ -16,10 +17,13 @@ const Topbar = () => {
           </div>
           <div className="topbarIconContainer">
             <Language />
+            <span className="topIconBadge">3</span>
           </div>
           <div className="topbarIconContainer">
             <Settings />
-            <span className="topIconBadge">3</span>
+          </div>
+          <div className="topbarImageContainer">
+            <img src={avatar} alt="Avatar" className="topAvatar" />
           </div>
         </div>
       </div>
