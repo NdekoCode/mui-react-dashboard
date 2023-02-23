@@ -21,7 +21,9 @@
 }
 
 .topbarIconContainer {
-    position: relative;
+    position    : relative;
+    margin-right: 10px;
+    color       : var(--icon-black);
     @extend %pointer;
 
     .topIconBadge {
@@ -29,11 +31,11 @@
         top             : -5px;
         right           : 0;
         color           : var(--white);
+        background-color: var(--red);
         border-radius   : 50%;
         width           : 15px;
         text-align      : center;
         aspect-ratio    : 1/1;
-        background-color: var(--dark);
         padding         : 1px;
         font-size       : 12px;
     }
